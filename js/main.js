@@ -16,6 +16,7 @@ var Interface = new function() {
           successCallback: function() {
             $('#graph').show();
             $('#mainButton').show();
+            $('#mainButton').text('Hide graph');
             $('#errorMessage').hide();
           }
         };
