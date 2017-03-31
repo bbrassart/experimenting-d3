@@ -9,17 +9,17 @@
   </head>
 
   <body>
-    <div class="form">
-      <input type="text" placeholder="Github username" id="githubUserInput">
-      <input id="validateUserInput" type="submit">
-
-    </div>
+    <form id="mainForm" class="form">
+      <input type="text"
+             placeholder="Enter a Github username"
+             required
+             id="githubUserInput">
+      <input type="submit">
+    </form>
     <button id="mainButton">
       Hide graph
     </button>
-    <div id="errorMessage">
-      Sorry, it seems like this user doesn't exist
-    </div>
+    <div id="errorMessage"></div>
     <div id="graph">
     </div>
   </body>
