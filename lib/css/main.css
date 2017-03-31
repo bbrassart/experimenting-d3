@@ -16,6 +16,10 @@ rect.disabled {
     fill: transparent !important;
 }
 
+svg {
+    padding: 30px;
+}
+
 #graph {
     position: relative;
     margin: 0 auto;
@@ -35,4 +39,11 @@ rect.disabled {
     top: 95px;
     width: 80px;
     z-index: 10;
+}
+
+/*Transition should be done via D3*/
+path:hover {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
