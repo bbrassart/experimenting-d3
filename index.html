@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3 Github Graph</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="description" content="D3 Github Graph">
+  </head>
+
+  <body>
+    <div class="form">
+      <input type="text" placeholder="Github username" id="githubUserInput">
+      <input id="validateUserInput" type="submit">
+
+    </div>
+    <button id="mainButton">
+      Hide graph
+    </button>
+    <div id="errorMessage">
+      Sorry, it seems like this user doesn't exist
+    </div>
+    <div id="graph">
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.js"></script>
+  <script src="js/D3Donut.js"></script>
+  <script src="js/main.js"></script>
+</html>
