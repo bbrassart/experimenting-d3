@@ -9,10 +9,13 @@ It uses all the default options of this library, except for the
 that are used to manipulate the DOM of the page. 
 
 For the rest, this example 
-uses only default options, meaning  that it will behave as follows:
+uses only default options, meaning that it will behave as follows:
 
-- It currently will display a tooltip with the details of the Github project the user is 
-hovering.
+- It currently will display a tooltip with the details of the Github project the user currently hovers.
 
-Note that this can be extended using the optional 
-callbacks `options.onMouseover` and `options.onMouseout` (to manipulate the DOM for example)
+- This tooltip can be deactivated by passing the option `{tooltip: false}` to 
+the `init` function.
+
+- The Github3D library accepts optional `onMouseouver` and `onMouseout` callback functions, 
+meaning that those functions, if present, will be executed every time the user hovers over a 
+project (`mouseover`) and leaves the SVG g path of the project (`mouseout`).
